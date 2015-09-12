@@ -1,0 +1,60 @@
+So im trying to write a function pattern which creates the following pattern upto n number of rows. If the Argument is 0 or a Negative Integer then it should return "" i.e. empty string.
+
+123456
+23456
+3456
+456
+56
+6
+I am trying to understand the solution of this question as below:
+
+function pattern(n){  
+ var output="";   
+   for(i=1;i<n+1;i++){ 
+     for(j=i;j<n+1;j++){    //what is the purpose of this j loop? 
+       output += j;   
+     }
+     if(i!=n) output +="\n";   //I know \n can jump to next line,  but what does this if statement mean?  why I!=n? 
+   }
+ return output;
+}
+
+
+answer : The j loop controls where to start the current line numbers. The i loop controls how many rows. The final if statement means don't add a newline on the final row.
+
+
+
+another example:
+
+
+// Board starts empty
+var board = '';
+
+// I put the loop we made before inside of a new loop
+// so that the row prints out 8 times.
+for (var y = 0; y < 8; y++) { // new loop start
+  for (var x = 0; x < 8; x++) {
+    // Now we add ‘ ‘ if x is even, ‘#’ if it’s odd.
+    if (x % 2 == 0) {
+      board = board + ' ';
+    } else {
+      board = board + '#';
+    }
+  }
+  // The line below is also new. It just adds line
+  // breaks to the end of each row.
+  board = board + '\n';
+} // new loop end
+
+console.log(board);
+
+
+
+ # # # #
+ # # # #
+ # # # #
+ # # # #
+ # # # #
+ # # # #
+ # # # #
+ # # # #

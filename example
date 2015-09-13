@@ -2,8 +2,9 @@ note:
 
    for(i=1;i<=n;i++){ 
       //chang the inner loop will change the direction of pattern. 
-      for(j=1;j<=i;j++){   // increasing pattern
-  or  for(j=i;j<=n;j++)    // decreasing pattern
+      for(j=1;j<=i;j++){   // increasing pattern j starting increasing from 1 till it gets i, if pattern(6) i=6 then stop at 6
+  or  for(j=i;j<=n;j++)    // decreasing pattern if pattern(6) i=6 starting j=i decreasing from 6
+  or  for(j=1;j<=n;j++)    //j goes the same way as i . starting from i till end at n...so if pattern(6) since n=6 111111 222222 333333 444444 555555 666666
        output += i;          //i will give identical number at one row: 1 22 333 4444 55555
 or     output += i;          //j will give incremental number: 1 12 123 1234 12345
 }

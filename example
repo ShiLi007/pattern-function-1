@@ -4,7 +4,7 @@ note:
       //chang the inner loop will change the direction of pattern. 
       for(j=1;j<=i;j++){   // increasing pattern
   or  for(j=i;j<=n;j++)    // decreasing pattern
-       output += i;          //i will give same number at one row: 1 22 333 4444 55555
+       output += i;          //i will give identical number at one row: 1 22 333 4444 55555
 or     output += i;          //j will give incremental number: 1 12 123 1234 12345
 }
 }
